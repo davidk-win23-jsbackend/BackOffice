@@ -4,20 +4,22 @@
 <header>
     <div class="container">
         <a id="logo" href="">
-            <img src="/images/logos/logo-light.svg" alt="Silicon" />
+            <img src="/images/logos/logo-dark.svg" alt="Silicon" />
         </a>
         <nav>
             <NavLink href="" Match="NavLinkMatch.All">Overview</NavLink>
 
             <AuthorizeView>
                 <Authorized>
-                    <NavLink href="/courses">Courses</NavLink>
+                    <NavLink class="btn btn-theme" href="/users">Users Management</NavLink>
+                    <NavLink class="btn btn-theme" href="/courses">Courses Management</NavLink>
+                    <NavLink class="btn btn-theme" href="/admins">Users Management</NavLink>
+                    <NavLink class="btn btn-theme" href="/subscribers">Users Management</NavLink>
                 </Authorized>
                 <NotAuthorized>
-                    <NavLink href="/features">Features</NavLink>
+                    <NavLink href="/">Back to classic website</NavLink>
                 </NotAuthorized>
             </AuthorizeView>
-            <NavLink href="/contacts">Contact</NavLink>
         </nav>
 
         <div id="theme-switch" class="btn-switch">
@@ -56,16 +58,6 @@
     private void ToggleTheme()
     {
         IsDarkMode = !IsDarkMode;
-        // Implement logic to toggle between light and dark themes
-        // For example:
-        // if (IsDarkMode)
-        // {
-        //     // Apply dark theme styles
-        // }
-        // else
-        // {
-        //     // Apply light theme styles
-        // }
     }
 
     [Inject]

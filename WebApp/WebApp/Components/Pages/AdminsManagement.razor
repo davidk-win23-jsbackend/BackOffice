@@ -1,4 +1,4 @@
-﻿@page "/signup"
+﻿@page "/admins"
 @rendermode InteractiveServer
 @attribute [StreamRendering]
 @inject HttpClient httpClient
@@ -13,7 +13,6 @@
 
 @inject UserManager<ApplicationUser> UserManager
 @inject SignInManager<ApplicationUser> SignInManager
-@inject ILogger<Register> Logger
 @inject NavigationManager NavigationManager
 
 <PageTitle>Sign up</PageTitle>

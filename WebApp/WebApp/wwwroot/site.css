@@ -1296,6 +1296,7 @@ footer .container .copyright span {
 
 header {
   padding: 15px 0;
+  background-color: var(--color-gray-700);
 }
 header .container {
   display: grid;
@@ -1491,6 +1492,12 @@ header .container .account-buttons .profile .profile-image form label {
 }
 #showcase .container .content .largest-brands .brands img {
   width: 120px;
+}
+#showcase .container .content .admin-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
 }
 #showcase .showcase-image {
   position: absolute;
